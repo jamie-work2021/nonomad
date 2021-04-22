@@ -3,7 +3,7 @@
     <img src="./icomoon/svg/keyboard_arrow_up.svg" alt="" />
   </div>
   <div class="side-navbar-flex flex">
-    <div class="container">
+    <div class="homepage-container">
       <div class="side-navbar-item">
         <a href="">
           <div class="navbar-item">
@@ -63,7 +63,7 @@
 </div>
 
 <div class="navbar">
-  <div class="container flex">
+  <div class="homepage-container flex">
     <div class="navbar-left">
       <a href="#">
         <svg class="icon-nomad-logo navbar-logo-svg">

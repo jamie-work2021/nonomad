@@ -1,7 +1,7 @@
 <section class="footer-section"></section>
 
     <section class="fixed-section">
-      <div class="container flex">
+      <div class="homepage-container flex">
         <div class="fixed-functions">
           <svg class="icon-homepage svg">
             <use xlink:href="./icomoon/symbol-defs.svg#icon-homepage"></use>
