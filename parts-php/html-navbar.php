@@ -1,56 +1,56 @@
 <div class="side-navbar none">
   <div class="icon-arrow-up hide">
-    <img src="/icomoon/svg/keyboard_arrow_up.svg" alt="" />
+    <img src="./icomoon/svg/keyboard_arrow_up.svg" alt="" />
   </div>
   <div class="side-navbar-flex flex">
     <div class="container">
       <div class="side-navbar-item">
         <a href="">
           <div class="navbar-item">
-            <img src="/images/navbar-icon/level.svg" alt="" />
+            <img src="./images/navbar-icon/level.svg" alt="" />
             <p class="text ff-noto">難度分級</p>
           </div>
         </a>
         <a href="">
           <div class="navbar-item">
-            <img src="/images/navbar-icon/blog.svg" alt="" />
+            <img src="./images/navbar-icon/blog.svg" alt="" />
             <p class="text ff-noto">登山記事</p>
           </div>
         </a>
         <a href="">
           <div class="navbar-item">
-            <img src="/images/navbar-icon/notice.svg" alt="" />
+            <img src="./images/navbar-icon/notice.svg" alt="" />
             <p class="text ff-noto">登山須知</p>
           </div>
         </a>
         <a href="">
           <div class="navbar-item">
-            <img src="/images/navbar-icon/weather.svg" alt="" />
+            <img src="./images/navbar-icon/weather.svg" alt="" />
             <p class="text ff-noto">天氣</p>
           </div>
         </a>
         <a href="">
           <div class="navbar-item">
-            <img src="/images/navbar-icon/product.svg" alt="" />
+            <img src="./images/navbar-icon/product.svg" alt="" />
             <p class="text ff-noto">商品</p>
           </div>
         </a>
 
         <a href="">
           <div class="navbar-item">
-            <img src="/images/navbar-icon/achivement.svg" alt="" />
+            <img src="./images/navbar-icon/achivement.svg" alt="" />
             <p class="text ff-noto">成就紀錄</p>
           </div>
         </a>
         <a href="">
           <div class="navbar-item">
-            <img src="/images/navbar-icon/schedule.svg" alt="" />
+            <img src="./images/navbar-icon/schedule.svg" alt="" />
             <p class="text ff-noto">行程</p>
           </div>
         </a>
         <a href="">
           <div class="navbar-item">
-            <img src="/images/navbar-icon/about_us.svg" alt="" />
+            <img src="./images/navbar-icon/about_us.svg" alt="" />
             <p class="text ff-noto">官方資訊</p>
           </div>
         </a>
@@ -58,7 +58,7 @@
     </div>
   </div>
   <div class="icon-arrow-down">
-    <img src="/icomoon/svg/keyboard_arrow_down.svg" alt="" />
+    <img src="./icomoon/svg/keyboard_arrow_down.svg" alt="" />
   </div>
 </div>
 
@@ -66,9 +66,9 @@
   <div class="container flex">
     <div class="navbar-left">
       <a href="#">
-        <svg class="icon-nomad-logo-dark navbar-logo-svg">
+        <svg class="icon-nomad-logo navbar-logo-svg">
           <use
-            xlink:href="./icomoon/symbol-defs.svg#icon-nomad-logo-dark"
+            xlink:href="./icomoon/symbol-defs.svg#icon-nomad-logo"
           ></use>
         </svg>
       </a>
@@ -82,7 +82,7 @@
 
       <div class="user-icon flex none">
         <div class="left-box">
-          <img src="/images/User-icon/Ellipse 17.png" alt="" />
+          <img src="./images/User-icon/Ellipse 17.png" alt="" />
         </div>
       </div>
       <div class="hamburger" id="mobile-cta">
