@@ -184,11 +184,11 @@ div.side-navbar div.side-navbar-item.slide-up {
 
 /* --------------------Navbar------------------------ */
 
-.navbar {
-  background-color: transparent;
-  padding: 1rem 1rem;
+div.navbar {
+  background-color: var(--fourth-color);
+  padding: 0 0.5rem;
 }
-.navbar-right .hamburger {
+div.navbar-right div.hamburger {
   position: relative;
   z-index: 998;
   display: flex;
@@ -238,7 +238,7 @@ div.side-navbar div.side-navbar-item.slide-up {
   width: 1.5rem;
   height: 3px;
   border-radius: 0.5rem;
-  background-color: var(--fourth-color);
+  background-color: white;
   position: relative;
   z-index: 1001;
   transition: 0.5s;
@@ -249,7 +249,7 @@ div.side-navbar div.side-navbar-item.slide-up {
   position: absolute;
   width: inherit;
   height: inherit;
-  background-color: var(--fourth-color);
+  background-color: white;
   border-radius: 0.5rem;
   transition: 0.5s;
 }
@@ -357,7 +357,6 @@ section.hero-section div.hero-image {
   background-size: cover;
   background-position-x: 22%;
   height: 86vh;
-  margin-top: -86px;
 }
 
 section.hero-section .hero-image .slogan {
@@ -787,6 +786,11 @@ section.fixed-section svg.icon-cart {
 
   /* --------------------Navbar------------------------- */
 
+  div.navbar {
+    background-color: transparent;
+    padding: 1rem 0.5rem;
+  }
+
   div.navbar div.navbar-right {
     justify-content: center;
   }
@@ -824,7 +828,12 @@ section.fixed-section svg.icon-cart {
 
   /* -----------------hero-section--------------- */
 
-  section.hero-section .hero-image .slogan {
+  section.hero-section div.hero-image {
+    margin-top: -86px;
+    background-position-y: 30%;
+  }
+
+  section.hero-section div.hero-image p.slogan {
     font-size: 5rem;
   }
 
