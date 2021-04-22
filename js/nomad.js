@@ -24,12 +24,12 @@ arrowDown.addEventListener("click", () => {
   sideNavItem.classList.add("slide-down");
   sideNavItem.classList.remove("slide-up");
   arrowDown.classList.add("hide");
-  arrowUp.classList.remove("show");
+  arrowUp.classList.remove("hide");
 });
 
 arrowUp.addEventListener("click", () => {
   sideNavItem.classList.add("slide-up");
   sideNavItem.classList.remove("slide-down");
-  arrowDown.classList.add("show");
-  arrowUp.classList.remove("hide");
+  arrowDown.classList.remove("hide");
+  arrowUp.classList.add("hide");
 });
