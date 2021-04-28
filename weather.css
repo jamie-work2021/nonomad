@@ -1,0 +1,541 @@
+body {
+    background: url(./images/landscape-natural-mountains-girl-canada-1920x1080_578745-mm-90.jpg) center center fixed no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+form {
+    position: absolute;
+    margin-left: 260px;
+    width: 16rem;
+    margin-top: 8vh;
+}
+
+.chosen-value,
+.value-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+}
+
+.chosen-value {
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    height: 4rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: #FAFCFD;
+    border: 3px solid transparent;
+    border-radius: 10px 10px 0 0px;
+    transition: 0.3s ease-in-out;
+}
+
+.chosen-value::-webkit-input-placeholder {
+    color: #333;
+}
+
+.chosen-value:hover {
+    background-color: #FF908B;
+    cursor: pointer;
+}
+
+.chosen-value:hover::-webkit-input-placeholder {
+    color: #333;
+}
+
+.chosen-value:focus,
+.chosen-value.open {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+    outline: 0;
+    background-color: #FF908B;
+    color: #000;
+}
+
+.chosen-value:focus::-webkit-input-placeholder,
+.chosen-value.open::-webkit-input-placeholder {
+    color: #000;
+}
+
+.value-list {
+    text-align: center;
+    list-style: none;
+    margin-top: 4rem;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.value-list.open {
+    max-height: 320px;
+    overflow: auto;
+}
+
+.value-list li {
+    position: relative;
+    height: 4rem;
+    background-color: #fafcfdaa;
+    padding: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 1;
+}
+
+.value-list li:hover {
+    background-color: #FF908B;
+}
+
+.value-list li.closed {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+}
+
+
+.black {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.219);
+}
+
+.n_1 {
+    display: none;
+    position: absolute;
+    transform: translate(590px, 130px);
+}
+
+.n_2 {
+    display: none;
+    position: absolute;
+    transform: translate(622px, 150px);
+}
+
+.n_3 {
+    display: none;
+    position: absolute;
+    transform: translate(645px, 195px);
+}
+
+.n_4 {
+    display: none;
+    position: absolute;
+    transform: translate(560px, 180px);
+}
+
+.n_5 {
+    position: absolute;
+    display: none;
+    transform: translate(720px, 182px);
+    /* pointer-events: none; */
+}
+.north img{
+    width: 15px;
+}
+.e_1{
+    position: absolute;
+    display: none;
+    transform: translate(750px, 242px);
+}
+.e_2{
+    display: none;
+    position: absolute;
+    transform: translate(740px, 272px);
+}
+.e_3{
+    display: none;
+    position: absolute;
+    transform: translate(750px, 302px);
+}
+.e_4{
+    display: none;
+    position: absolute;
+    transform: translate(750px, 332px);
+}
+.e_5{
+    display: none;
+    position: absolute;
+    transform: translate(750px, 362px);
+}
+.e_6{
+    display: none;
+    position: absolute;
+    transform: translate(740px, 382px);
+}
+.e_7{
+    display: none;
+    position: absolute;
+    transform: translate(720px, 402px);
+}
+.e_8{
+    display: none;
+    position: absolute;
+    transform: translate(700px, 422px);
+}
+.m_1{
+    position: absolute;
+    transform: translate(707px, 227px);
+}
+.m_2{
+    position: absolute;
+    transform: translate(722px, 249px);
+}
+.m_3{
+    position: absolute;
+    transform: translate(524px, 238px);
+}
+.m_4{
+    position: absolute;
+    transform: translate(511px, 258px);
+}
+.m_5{
+    position: absolute;
+    transform: translate(525px, 278px);
+}
+.m_6{
+    position: absolute;
+    transform: translate(670px, 265px);
+}
+.m_7{
+    position: absolute;
+    transform: translate(687px, 300px);
+}
+.m_8{
+    position: absolute;
+    transform: translate(573px, 310px);
+}
+.m_9{
+    position: absolute;
+    transform: translate(611px, 330px);
+}
+.m_10{
+    position: absolute;
+    transform: translate(550px, 381px);
+}
+.m_11{
+    position: absolute;
+    transform: translate(659px, 411px);
+}
+
+
+.show {
+    display: block;
+}
+
+@media screen and (min-width: 961px) and (max-width: 1940px) {
+/* ------------ taiwan-map ---------------- */
+div.weather_page svg {
+    margin-left: 12%;
+    width: 30%;
+    /* height: 100vh; */
+}
+
+path {
+    stroke: rgb(114, 95, 61);
+    fill: rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+path:hover {
+    fill: #B99362;
+    transform: translate(-5px, -5px);
+}
+
+/* ----------------weather---------------- */
+.weather_box {
+    margin-right: 5%;
+    margin-left: 5%; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 3px 3px 12px black;
+    /* opacity: .9; */
+    width: 35%;
+    /* height: 800px; */
+}
+
+.weather_page {
+    display: flex;
+}
+
+.icon_tem {
+    display: flex;
+    align-items: center;
+}
+
+.icon_tem img {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.tem {
+
+    line-height: 80px;
+    font-size: 42px;
+    font-weight: blod;
+}
+
+
+.mountain_weather {
+    margin-top: 5%;
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+
+.mountain_name {
+    margin-left: 5%;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.mountain_date {
+    font-size: 17px;
+}
+
+.line-right {
+    width: 50px;
+    height: 140px;
+    border-right: solid #464749 3px;
+}
+
+.detailed_weather {
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 23px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.today_title{
+    margin-left: 5%;
+    font-size:30px;
+    font-weight: 500;
+
+}
+#today_time_box{
+    display: flex;
+}
+.time_weather.first{
+    margin-left: 4%;
+}
+.time_weather p{ 
+    font-size: 26px;
+    text-align: center;
+
+}
+.small_center{
+    margin: 0 auto;
+}
+.time_weather.first img{
+    width: 60%;
+    margin-left: 20%;
+   
+}
+.time_weather img{
+    width: 60%;
+    margin-left: 20%;
+   
+}
+.weather_icon_container{
+    margin: 0 auto;
+}
+.time_weather{
+    padding: 1%;
+    margin-top: 2%;
+    width: 16%;
+    margin-right: 2%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.next_title{
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size:30px;
+    font-weight: 500;
+}
+.week_container{
+    line-height: 30px;
+    display: flex;
+    /* margin: 1%; */
+    justify-content: space-evenly;
+    border-top:  1px solid black;
+    /* border-bottom:  1px solid black; */
+}
+.week_weather_icon{
+    margin-top: 1%;
+    margin-right: -10%;
+}
+.week_weather_icon img{
+    width: 40%;
+    margin-left: 10%;
+   
+}
+.delete_box{
+    display: none;
+}
+}
+
+/* -----------mobile---------------- */
+@media screen and (min-width: 200px) and (max-width: 960px) 
+{
+    div.weather_page svg {
+        /* margin-left: 250px; */
+        margin-left:0% ;
+        max-width: 100%;
+        height: 100vh;
+        z-index: -1;
+        position: fixed;
+    }
+    
+    path {
+        stroke: rgb(114, 95, 61);
+        fill: rgb(255, 255, 255);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    path:hover {
+        fill: #B99362;
+        transform: translate(-5px, -5px);
+    }
+
+    .weather_box {
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 3px 3px 12px black;
+        width: 90%;
+        height: 700px;
+        display: none;
+    }
+    
+    .weather_page {
+        display: block;
+    }
+    .icon_tem {
+        display: flex;
+        align-items: center;
+    }
+    
+    .icon_tem img {
+        /* margin-right: 15px; */
+        width: 50%;
+    }
+    
+    .tem {
+    
+        line-height: 50px;
+        font-size: 40px;
+        font-weight: blod;
+    }
+    
+    
+    .mountain_weather {
+        margin-top: 30px;
+        padding-top: 30px;
+        align-items: center;
+        display: block;
+        text-align: left;
+    }
+    
+    .mountain_name {
+        margin-top: 10px;
+        margin-left: 30px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    .mountain_date {
+        font-size: 16px;
+    }
+    
+    .line-right {
+        display: none;
+        width: 50px;
+        height: 140px;
+        border-right: solid #464749 3px;
+    }
+    
+    .detailed_weather {
+        line-height: 30px;
+        font-weight: 300;
+        font-size: 23px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .today_title{
+        display:none;
+        font-size:30px;
+        font-weight: 500;
+    
+    }
+    #today_time_box{
+        display: none;
+    }
+    .time_weather.first{
+        margin-left: 4%;
+    }
+    .time_weather p{ 
+        font-size: 29px;
+        text-align: center;
+    
+    }
+    .small_center{
+        margin: 0 auto;
+    }
+    .time_weather.first img{
+        width: 60%;
+        margin-left: 20%;
+       
+    }
+    .time_weather img{
+        width: 60%;
+        margin-left: 20%;
+       
+    }
+    .weather_icon_container{
+        margin: 0 auto;
+    }
+    .time_weather{
+        margin-top: 2%;
+        width: 16%;
+        height: 160px;
+        margin-right: 2%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+    .next_title{
+        font-size:30px;
+        font-weight: 500;
+    }
+    .week_container{
+        line-height: 25px;
+        display: flex;
+        margin: 2%;
+        justify-content: space-evenly;
+        border-top:  1px solid black;
+        /* border-bottom:  1px solid black; */
+    }
+    .week_weather_icon{
+        margin-right: -10%;
+    }
+    .week_weather_icon img{
+        width: 40%;
+        margin-left: 10%;
+       
+    }
+    
+}

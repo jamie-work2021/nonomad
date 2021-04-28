@@ -1,5 +1,5 @@
 // 手機版時，點擊漢堡選單彈出Nav
-const modal = document.querySelector(".modal");
+const modal = document.querySelector(".modal2");
 check = document.getElementById("check");
 mobileBtn = document.getElementById("mobile-cta");
 nav = document.querySelector("nav");
@@ -13,7 +13,7 @@ check.addEventListener("click", () => {
 });
 
 modal.addEventListener("click", (e) => {
-  if (e.target.classList.contains("modal")) {
+  if (e.target.classList.contains("modal2")) {
     modal.classList.remove("open");
     nav.classList.remove("menu-btn");
     check.checked = false;

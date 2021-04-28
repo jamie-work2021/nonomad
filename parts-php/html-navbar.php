@@ -67,9 +67,7 @@
     <div class="navbar-left">
       <a href="#">
         <svg class="icon-nomad-logo navbar-logo-svg">
-          <use
-            xlink:href="./icomoon/symbol-defs.svg#icon-nomad-logo"
-          ></use>
+          <use xlink:href="./icomoon/symbol-defs.svg#icon-nomad-logo"></use>
         </svg>
       </a>
     </div>
@@ -100,9 +98,7 @@
             <li class="nav-item flex">
               <p class="ff-noto">官方資訊</p>
               <svg class="icon-arrow-forward svg">
-                <use
-                  xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
-                ></use>
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
               </svg>
             </li>
           </a>
@@ -110,9 +106,7 @@
             <li class="nav-item flex">
               <p class="ff-noto">行程</p>
               <svg class="icon-arrow-forward svg">
-                <use
-                  xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
-                ></use>
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
               </svg>
             </li>
           </a>
@@ -120,9 +114,7 @@
             <li class="nav-item flex">
               <p class="ff-noto">商品</p>
               <svg class="icon-arrow-forward svg">
-                <use
-                  xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
-                ></use>
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
               </svg>
             </li>
           </a>
@@ -130,9 +122,7 @@
             <li class="nav-item flex">
               <p class="ff-noto">成就紀錄</p>
               <svg class="icon-arrow-forward svg">
-                <use
-                  xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
-                ></use>
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
               </svg>
             </li>
           </a>
@@ -140,9 +130,7 @@
             <li class="nav-item flex">
               <p class="ff-noto">登山記事</p>
               <svg class="icon-arrow-forward svg">
-                <use
-                  xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
-                ></use>
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
               </svg>
             </li>
           </a>
@@ -150,9 +138,7 @@
             <li class="nav-item flex">
               <p class="ff-noto">難度分級</p>
               <svg class="icon-arrow-forward svg">
-                <use
-                  xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
-                ></use>
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
               </svg>
             </li>
           </a>
@@ -160,9 +146,7 @@
             <li class="nav-item flex">
               <p class="ff-noto">天氣</p>
               <svg class="icon-arrow-forward svg">
-                <use
-                  xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
-                ></use>
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
               </svg>
             </li>
           </a>
@@ -170,9 +154,7 @@
             <li class="nav-item flex">
               <p class="ff-noto">登山須知</p>
               <svg class="icon-arrow-forward svg">
-                <use
-                  xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"
-                ></use>
+                <use xlink:href="./icomoon/symbol-defs.svg#icon-arrow_forward_ios"></use>
               </svg>
             </li>
           </a>
@@ -180,9 +162,7 @@
 
           <li class="nav-logo">
             <svg class="icon-nomad-logo-dark navbar-logo-svg">
-              <use
-                xlink:href="./icomoon/symbol-defs.svg#icon-nomad-logo-dark"
-              ></use>
+              <use xlink:href="./icomoon/symbol-defs.svg#icon-nomad-logo-dark"></use>
             </svg>
           </li>
 
@@ -206,4 +186,4 @@
   </div>
 </div>
 
-<div class="modal"></div>
+<div class="modal2"></div>

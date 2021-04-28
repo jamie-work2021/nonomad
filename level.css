@@ -1,0 +1,399 @@
+body {
+    background: url(./images/landscape-natural-mountains-girl-canada-1920x1080_578745-mm-90.jpg) center center fixed ;
+    /* overflow: hidden; */
+    background-size: cover;
+    z-index: -10;
+    width: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+    /* height:500vh; */
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparent option{
+    background-color:transparent;
+}
+.op_color{
+    background-color: transparent !important
+    ; 
+}
+.select {
+    background-color: transparent;
+    position: relative;
+    min-width: 200px;
+    margin-right: 15%;
+}
+
+
+.select svg {
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #9098a9;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
+
+.select select {
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 100%;
+    border: 1px solid #e8eaed;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px -2px #add8e6;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+}
+
+.select select:required:invalid {
+    color: #add8e6;
+}
+
+.select select option {
+
+    color: brown;
+}
+
+.select select option[value=""][disabled] {
+    display: none;
+}
+
+.select select:focus {
+    outline: none;
+    border-color: #add8e6;
+    box-shadow: 0 0 0 2px #add8e6;
+}
+
+.select select:hover+svg {
+    stroke: #add8e6;
+}
+
+.sprites {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 960px) {
+    div.level_page_flexbox svg {
+        margin-top: 120px;
+        width: 100%;
+        z-index: -1;
+        position: fixed;
+        /* height: 100vh; */
+    }
+
+    .select {
+        position: relative;
+        min-width: 100px;
+        margin-right: 2%;
+    }
+    .select select {
+        margin-top: 5%;
+        -webkit-appearance: none;
+        padding: 3px 32px 6px 12px;
+        width: 92%;
+        border: 1px solid #e8eaed;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0 1px 3px -2px #add8e6;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 16px;
+        transition: all 150ms ease;
+    }
+}
+
+
+/* ------------ taiwan-map ---------------- */
+/* ---------------mobile---------------------- */
+div.navbar{
+    display: block;
+}
+
+.btn-info{
+    position: absolute;
+    z-index: -1;
+    transform: translate(60px,100px);
+    /* transform: translateY(200px); */
+
+}
+.level_page_flexbox{
+    display: block;
+}
+div.level_page_flexbox svg {
+    
+    width: 100%;
+    /* z-index: -1;
+    position: fixed; */
+    /* height: 100vh; */
+}
+
+path {
+    stroke: rgb(148, 163, 156);
+    fill: rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* path:hover {
+    fill: #B99362;
+    transform: translate(-5px, -5px);
+} */
+
+.mountain_box{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    border-radius:10px ;
+    max-width: 80%;
+    /* height: 100vh; */
+    margin: 40px auto;
+
+}
+.close{
+    display: block;
+    fill: black;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.mountain_name{
+    margin: 0 auto;
+    width: 80%;
+    display: flex; 
+    align-items:flex-end ;
+}
+.main_mountain{
+    font-size: 23px;
+    font-weight: 300;
+}
+.other_mountain{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 300;
+}
+.m_img_container{
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+}
+.m_img_container img{
+    width: 100%;
+    height: auto;
+}
+.mountain_info_text{
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 400;
+    width: 80%;
+    word-break: break-all;
+}
+.info_border{
+    border-bottom: 1px solid black ;
+    width: 80%;
+    margin:0 auto;
+}
+.box{
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary{
+    margin-left: 9%;
+    background-color: #F0A520;
+    color: #424642;
+    border-style: none;
+}
+.equ_img_four{
+    margin-left: 10%;
+    margin: 0 auto;
+}
+.equ_img_two{
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equ_img img{
+    width: 50%;
+    
+}
+
+.circle{
+    border-radius:50% ;
+    border: 2px solid #F0A520;
+}
+.level_light_box{
+    display: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    line-height: 25px;
+    letter-spacing:2px;
+    font-weight: 300;
+}
+.level_info_title{
+    padding-top:30px ;
+    padding-bottom:10px ;
+    margin: 20px auto;
+    text-align: center;
+    color: #F0A500;
+    font-size: 23px;
+}
+.season_title{
+    font-weight: 600;
+}
+
+.info-text{
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+.level-line{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+
+/* ----------------weather---------------- */
+@media screen and (min-width: 961px) and (max-width: 1940px) {
+    body{
+        font-size: 23px;
+    }
+    .btn-info{
+        position: absolute;
+        z-index: 3;
+        transform: translate(235px,200px);
+        
+    
+    }
+    div.level_page_flexbox svg {
+        margin-top: 30px;
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .level_page_flexbox{
+        display: flex;
+    }
+    .mountain_box{
+        display: block;
+        background-color: rgb(255, 255, 255);
+        border-radius:10px ;
+        max-width: 30%;
+        /* height: 100vh; */
+        margin: 40px auto;
+    }
+    .main_mountain{
+        font-size: 33px;
+        font-weight: 300;
+    }
+    .other_mountain{
+        font-size: 23px;
+        line-height: 53px;
+        font-weight: 300;
+    }
+    .m_img_container{
+        margin: 0 auto;
+        width: 80%;
+        height: 10%;
+    }
+    .m_img_container img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .equ_img img{
+        width: 80%;
+        
+    }
+
+    .equ_img_four{
+        display: flex;
+        margin-left: 10%;
+        margin: 0 auto;
+    }
+    .close{
+        display: none; 
+    }
+
+    .mountain_info_text{
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        width: 80%;
+        word-break: break-all;
+}
+.close_level{
+    display: block;
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+.level_light_box{
+    position: absolute;
+    z-index: 5;
+    display:none;
+    border-radius: 10px;
+    margin: 100px 200px;
+    width: 40%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 19px;
+    line-height: 35px;
+    letter-spacing:3px;
+    font-weight: 300;
+}
+.level_info_title{
+    padding-top:30px ;
+    padding-bottom:10px ;
+    margin: 20px auto;
+    text-align: center;
+    color: #F0A500;
+    font-size: 33px;
+}
+.season_title{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.info-text{
+    /* padding-bottom: 30px; */
+    margin: 0 auto;
+    width: 80%;
+}
+.level-line{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+}
+
+/* -----------mobile---------------- */

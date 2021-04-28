@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* min-height: 100vh; */
+
+            /* justify-content: center;
+            align-items: center; */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* * {
+            box-sizing: border-box;
+        } */
+
+        .select {
+            position: relative;
+            min-width: 200px;
+        }
+
+
+        .select svg {
+            position: absolute;
+            right: 12px;
+            top: calc(50% - 3px);
+            width: 10px;
+            height: 6px;
+            stroke-width: 2px;
+            stroke: #9098a9;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            pointer-events: none;
+        }
+
+        .select select {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            -webkit-appearance: none;
+            padding: 7px 40px 7px 12px;
+            width: 100%;
+            border: 1px solid #e8eaed;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 1px 3px -2px #add8e6;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 16px;
+            transition: all 150ms ease;
+        }
+
+        .select select:required:invalid {
+            color: #add8e6;
+        }
+
+        .select select option {
+
+            color: brown;
+        }
+
+        .select select option[value=""][disabled] {
+            display: none;
+        }
+
+        .select select:focus {
+            outline: none;
+            border-color: #add8e6;
+            box-shadow: 0 0 0 2px #add8e6;
+        }
+
+        .select select:hover+svg {
+            stroke: #add8e6;
+        }
+
+        .sprites {
+            position: absolute;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label class="select" for="slct">
+            <select id="slct" required="required">
+                <option value="" disabled="disabled" selected="selected">Select option</option>
+                <option value="#">One</option>
+                <option value="#">Two</option>
+                <option value="#">Three</option>
+                <option value="#">Four</option>
+                <option value="#">Five</option>
+                <option value="#">Six</option>
+                <option value="#">Seven</option>
+            </select>
+            <svg>
+                <use xlink:href="#select-arrow-down"></use>
+            </svg>
+        </label>
+        <!-- SVG Sprites-->
+        <svg class="sprites">
+            <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                <polyline points="1 1 5 5 9 1"></polyline>
+            </symbol>
+        </svg>
+        <label class="select" for="slct">
+            <select id="slct" required="required">
+                <option value="" disabled="disabled" selected="selected">Select option</option>
+                <option value="#">One</option>
+                <option value="#">Two</option>
+                <option value="#">Three</option>
+                <option value="#">Four</option>
+                <option value="#">Five</option>
+                <option value="#">Six</option>
+                <option value="#">Seven</option>
+            </select>
+            <svg>
+                <use xlink:href="#select-arrow-down"></use>
+            </svg>
+        </label>
+        <!-- SVG Sprites-->
+        <svg class="sprites">
+            <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                <polyline points="1 1 5 5 9 1"></polyline>
+            </symbol>
+        </svg>
+        <label class="select" for="slct">
+            <select id="slct" required="required">
+                <option value="" disabled="disabled" selected="selected">Select option</option>
+                <option value="#">One</option>
+                <option value="#">Two</option>
+                <option value="#">Three</option>
+                <option value="#">Four</option>
+                <option value="#">Five</option>
+                <option value="#">Six</option>
+                <option value="#">Seven</option>
+            </select>
+            <svg>
+                <use xlink:href="#select-arrow-down"></use>
+            </svg>
+        </label>
+    </div>
+    <!-- SVG Sprites-->
+    <svg class="sprites">
+        <symbol id="select-arrow-down" viewbox="0 0 10 6">
+            <polyline points="1 1 5 5 9 1"></polyline>
+        </symbol>
+    </svg>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* display: flex;
+            flex-direction: column; */
+            width: 100%;
+            height: 100vh;
+            /* align-items: center;
+            justify-content: flex-start; */
+            font-family: "Ek Mukta";
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 4px;
+            background: url(./images/landscape-natural-mountains-girl-canada-1920x1080_578745-mm-90.jpg) center center fixed no-repeat;
+            overflow: hidden;
+            background-size: cover;
+        }
+
+        h1 {
+            margin-top: 10vh;
+            font-size: 2.5rem;
+            max-width: 500px;
+            letter-spacing: 3px;
+            text-align: center;
+            line-height: 1.5;
+            font-family: "Open Sans";
+            text-transform: capitalize;
+            font-weight: 800;
+            color: white;
+        }
+
+        h1 span {
+            color: #FF908B;
+        }
+
+        form {
+            position: relative;
+            width: 18rem;
+            margin-top: 8vh;
+        }
+
+        .chosen-value,
+        .value-list {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .chosen-value {
+            font-family: "Ek Mukta";
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 4px;
+            height: 4rem;
+            font-size: 1.1rem;
+            padding: 1rem;
+            background-color: #FAFCFD;
+            border: 3px solid transparent;
+            border-radius: 10px 10px 0 0px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .chosen-value::-webkit-input-placeholder {
+            color: #333;
+        }
+
+        .chosen-value:hover {
+            background-color: #FF908B;
+            cursor: pointer;
+        }
+
+        .chosen-value:hover::-webkit-input-placeholder {
+            color: #333;
+        }
+
+        .chosen-value:focus,
+        .chosen-value.open {
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+            outline: 0;
+            background-color: #FF908B;
+            color: #000;
+        }
+
+        .chosen-value:focus::-webkit-input-placeholder,
+        .chosen-value.open::-webkit-input-placeholder {
+            color: #000;
+        }
+
+        .value-list {
+            list-style: none;
+            margin-top: 4rem;
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 10px 10px;
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .value-list.open {
+            max-height: 320px;
+            overflow: auto;
+        }
+
+        .value-list li {
+            position: relative;
+            height: 4rem;
+            background-color: #fafcfd8c;
+            padding: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            opacity: 1;
+        }
+
+        .value-list li:hover {
+            background-color: #FF908B;
+        }
+
+        .value-list li.closed {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><span>Styled</span> and <span>filterable</span> select dropdown</h1>
+    <form>
+        <input class="chosen-value" type="text" value="" placeholder="Type to filter">
+        <ul class="value-list">
+            <li>玉山</li>
+            <li>合歡山</li>
+            <li>奇萊南峰</li>
+            <li>奇萊北峰</li>
+            <li>玉山北峰</li>
+            <li>雪山</li>
+            <li>關山</li>
+            <li>北大武山</li>
+            <li>Florida</li>
+            <li>Georgia</li>
+            <li>Hawaii</li>
+            <li>Idaho</li>
+            <li>Illinois</li>
+            <li>Indiana</li>
+            <li>Iowa</li>
+            <li>Kansas</li>
+            <li>Kentucky</li>
+            <li>Louisiana</li>
+            <li>Maine</li>
+            <li>Maryland</li>
+            <li>Massachusetts</li>
+            <li>Montana</li>
+            <li>Nebraska</li>
+            <li>Nevada</li>
+            <li>New Hampshire</li>
+            <li>North Dakota</li>
+            <li>Ohio</li>
+            <li>Oklahoma</li>
+            <li>Oregon</li>
+
+        </ul>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        const inputField = document.querySelector('.chosen-value');
+        const dropdown = document.querySelector('.value-list');
+        const dropdownArray = [...document.querySelectorAll('li')];
+        console.log(typeof dropdownArray);
+        dropdown.classList.add('open');
+        inputField.focus(); // Demo purposes only
+        let valueArray = [];
+        dropdownArray.forEach(item => {
+            valueArray.push(item.textContent);
+        });
+
+        const closeDropdown = () => {
+            dropdown.classList.remove('open');
+        };
+
+        inputField.addEventListener('input', () => {
+            dropdown.classList.add('open');
+            let inputValue = inputField.value.toLowerCase();
+            let valueSubstring;
+            if (inputValue.length > 0) {
+                for (let j = 0; j < valueArray.length; j++) {
+                    if (window.CP.shouldStopExecution(0)) break;
+                    if (!(inputValue.substring(0, inputValue.length) === valueArray[j].substring(0, inputValue.length).toLowerCase())) {
+                        dropdownArray[j].classList.add('closed');
+                    } else {
+                        dropdownArray[j].classList.remove('closed');
+                    }
+                } window.CP.exitedLoop(0);
+            } else {
+                for (let i = 0; i < dropdownArray.length; i++) {
+                    if (window.CP.shouldStopExecution(1)) break;
+                    dropdownArray[i].classList.remove('closed');
+                } window.CP.exitedLoop(1);
+            }
+        });
+
+        dropdownArray.forEach(item => {
+            item.addEventListener('click', evt => {
+                inputField.value = item.textContent;
+                dropdownArray.forEach(dropdown => {
+                    dropdown.classList.add('closed');
+                });
+            });
+        });
+
+        inputField.addEventListener('focus', () => {
+            inputField.placeholder = 'Type to filter';
+            dropdown.classList.add('open');
+            dropdownArray.forEach(dropdown => {
+                dropdown.classList.remove('closed');
+            });
+        });
+
+        inputField.addEventListener('blur', () => {
+            inputField.placeholder = 'Select state';
+            dropdown.classList.remove('open');
+        });
+
+        document.addEventListener('click', evt => {
+            const isDropdown = dropdown.contains(evt.target);
+            const isInput = inputField.contains(evt.target);
+            if (!isDropdown && !isInput) {
+                dropdown.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+
+</html>
